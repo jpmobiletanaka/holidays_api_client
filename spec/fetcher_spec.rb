@@ -1,6 +1,8 @@
 RSpec.describe HolidaysApiClient::Fetcher do
   let(:response) { YAML.load_file('spec/support/data.yaml') }
-  subject(:result) { described_class.call(token: 'foobar', params: { from: '2019-12-31', to: '2020-01-01', country_code: 'jp' }) }
+  subject(:result) do
+    described_class.call(token: 'foobar', params: { from: '2019-12-31', to: '2020-01-01', country_code: 'jp' })
+  end
 
   before(:each) do
     stub_request(:get, "#{HolidaysApiClient::Configuration.holidays_url}?country_code=jp&from=2019-12-31&to=2020-01-01")

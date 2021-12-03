@@ -8,6 +8,7 @@ require 'holidays_api_client/base'
 require 'holidays_api_client/configuration'
 require 'holidays_api_client/authenticator'
 require 'holidays_api_client/fetcher'
+require 'holidays_api_client/fetcher_raw'
 require 'holidays_api_client/error'
 
 module HolidaysApiClient
