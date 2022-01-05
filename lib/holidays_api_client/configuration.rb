@@ -1,4 +1,5 @@
 # frozen-string-literal: true
+
 require 'singleton'
 require 'forwardable'
 

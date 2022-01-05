@@ -1,7 +1,10 @@
 RSpec.describe HolidaysApiClient::Authenticator do
   let(:token) { 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.' }
 
-  before { stub_request(:post, HolidaysApiClient::Configuration.authenticate_url).to_return(status: 200, body: response, headers: {}) }
+  before do
+    stub_request(:post, HolidaysApiClient::Configuration.authenticate_url)
+      .to_return(status: 200, body: response, headers: {})
+  end
 
   subject { described_class.call }
 

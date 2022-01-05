@@ -1,6 +1,6 @@
+# rubocop:disable Metrics/BlockLength
 RSpec.describe HolidaysApiClient::Configuration do
   describe '.confgure' do
-
     context 'when valid params passed' do
       let(:blk) do
         lambda do |config|
@@ -34,3 +34,4 @@ RSpec.describe HolidaysApiClient::Configuration do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength
