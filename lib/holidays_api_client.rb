@@ -20,7 +20,7 @@ module HolidaysApiClient
 end
 
 HolidaysApiClient.configure do |config|
-  config.api_url = 'http://holidays.revenue.metroengines.jp'
+  config.api_url = 'https://holidays.metroengines.jp'
   config.auth_path = '/api/v1/auth'
   config.index_path = '/api/v1/holidays'
 end
